@@ -34,20 +34,20 @@ We adopt the two-stream network structure introduced in [3]. ResNet50 is adopted
 ### 3. Training.
   Train a model on SYSU-MM01:
   ```bash
-python3 MULT_master/main.py --dataset sysu --batch-size 12 --num_pos 12 --eps 0.6 --pretrained False
+python3 main.py --dataset sysu --batch-size 12 --num_pos 12 --eps 0.6 --pretrained False
 ```
   Train a model pretrained by the DCL [4] framework on SYSU-MM01:
   ```bash
-python3 MULT_master/main.py --dataset sysu --batch-size 12 --num_pos 12 --eps 0.6 --pretrained True
+python3 main.py --dataset sysu --batch-size 12 --num_pos 12 --eps 0.6 --pretrained True
 ```
 
 Train a model on RegDB:
   ```bash
-python3 MULT_master/tester.py --dataset regdb --batch-size 12 --num_pos 12 --eps 0.3 --pretrained False
+python3 main.py --dataset regdb --batch-size 12 --num_pos 12 --eps 0.3 --pretrained False
 ```
 Train a model pretrained by the DCL [4] framework on RegDB:
   ```bash
-python3 MULT_master/tester.py --dataset regdb --batch-size 12 --num_pos 12 --eps 0.3 --pretrained True
+python3 main.py --dataset regdb --batch-size 12 --num_pos 12 --eps 0.3 --pretrained True
 ```
 
 You may need mannully define the data path first.
