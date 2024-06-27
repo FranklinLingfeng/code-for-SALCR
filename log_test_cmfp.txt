@@ -1,0 +1,435 @@
+==========
+Args:Namespace(seed=1, workers=4, dataset='sysu', regdb_trial=10, epochs=80, img_w=144, img_h=288, test_batch=128, batch_size=8, num_pos=8, print_step=50, eval_step=1, start_epoch_two_modality=40, eps=0.6, k1=30, k2=6, arch='resnet50', pool_dim=2048, per_add_iters=1, lr=0.00035, optim='adam', pooling_type='gem', train_iter=300, pretrained=True, momentum=0.1, momentum_cross=0.1, temp=0.05, use_hard=False, device=3, test_CMFF=True, test_CMRR=False, trial=2, data_dir='hlf/1_ReID_data', logs_dir='/data/hlf/USL/logs/test_Final_w_CMFFt', sysu_model_dir='/data/hlf/USL/logs/lambda_2=0.5/stage_two_model', regdb_model_dir='/data/hlf/USL/logs/regdb_trial_10/beta0.7alpha0.2', part_num=3)
+==========
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 2.912
+Extracting Query Feature...
+Extracting Time:	 8.742
+Start knn-search:
+Finish knn-search:0.25074243545532227
+eval feat after batchnorm
+Evaluation Time:	 2.680
+Extracting Gallery Feature...
+Extracting Time:	 0.900
+Extracting Query Feature...
+Extracting Time:	 8.767
+Start knn-search:
+Finish knn-search:0.23200297355651855
+eval feat after batchnorm
+Evaluation Time:	 0.999
+all:   Rank-1: 80.57% | Rank-5: 94.69% | Rank-10: 97.58%| Rank-20: 98.97%| mAP: 75.80%| mINP: 62.35%
+indoor:   Rank-1: 81.84% | Rank-5: 94.16% | Rank-10: 95.24%| Rank-20: 99.23%| mAP: 83.19%| mINP: 79.27%
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 1.282
+Extracting Query Feature...
+Extracting Time:	 8.753
+Start knn-search:
+Finish knn-search:0.23345184326171875
+eval feat after batchnorm
+Evaluation Time:	 2.474
+Extracting Gallery Feature...
+Extracting Time:	 0.923
+Extracting Query Feature...
+Extracting Time:	 8.840
+Start knn-search:
+Finish knn-search:0.22457051277160645
+eval feat after batchnorm
+Evaluation Time:	 0.912
+all:   Rank-1: 77.10% | Rank-5: 94.61% | Rank-10: 97.50%| Rank-20: 99.74%| mAP: 73.88%| mINP: 60.26%
+indoor:   Rank-1: 80.16% | Rank-5: 92.57% | Rank-10: 96.83%| Rank-20: 99.46%| mAP: 81.53%| mINP: 77.72%
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 1.342
+Extracting Query Feature...
+Extracting Time:	 8.898
+Start knn-search:
+Finish knn-search:0.24383330345153809
+eval feat after batchnorm
+Evaluation Time:	 2.485
+Extracting Gallery Feature...
+Extracting Time:	 0.962
+Extracting Query Feature...
+Extracting Time:	 8.759
+Start knn-search:
+Finish knn-search:0.2408146858215332
+eval feat after batchnorm
+Evaluation Time:	 1.009
+all:   Rank-1: 78.15% | Rank-5: 92.69% | Rank-10: 96.45%| Rank-20: 98.66%| mAP: 73.31%| mINP: 59.70%
+indoor:   Rank-1: 74.68% | Rank-5: 93.57% | Rank-10: 98.37%| Rank-20: 99.95%| mAP: 78.79%| mINP: 75.12%
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 1.367
+Extracting Query Feature...
+Extracting Time:	 8.783
+Start knn-search:
+Finish knn-search:0.23317885398864746
+eval feat after batchnorm
+Evaluation Time:	 2.465
+Extracting Gallery Feature...
+Extracting Time:	 0.948
+Extracting Query Feature...
+Extracting Time:	 8.666
+Start knn-search:
+Finish knn-search:0.2165052890777588
+eval feat after batchnorm
+Evaluation Time:	 0.899
+all:   Rank-1: 80.96% | Rank-5: 95.87% | Rank-10: 98.58%| Rank-20: 99.76%| mAP: 77.37%| mINP: 64.68%
+indoor:   Rank-1: 85.73% | Rank-5: 96.56% | Rank-10: 97.78%| Rank-20: 99.82%| mAP: 87.98%| mINP: 85.76%
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 1.369
+Extracting Query Feature...
+Extracting Time:	 8.690
+Start knn-search:
+Finish knn-search:0.23428797721862793
+eval feat after batchnorm
+Evaluation Time:	 2.520
+Extracting Gallery Feature...
+Extracting Time:	 0.921
+Extracting Query Feature...
+Extracting Time:	 8.701
+Start knn-search:
+Finish knn-search:0.21823787689208984
+eval feat after batchnorm
+Evaluation Time:	 0.903
+all:   Rank-1: 82.04% | Rank-5: 94.90% | Rank-10: 97.82%| Rank-20: 99.16%| mAP: 78.13%| mINP: 66.70%
+indoor:   Rank-1: 76.00% | Rank-5: 93.80% | Rank-10: 96.29%| Rank-20: 99.28%| mAP: 80.60%| mINP: 77.65%
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 1.382
+Extracting Query Feature...
+Extracting Time:	 8.776
+Start knn-search:
+Finish knn-search:0.22682762145996094
+eval feat after batchnorm
+Evaluation Time:	 2.460
+Extracting Gallery Feature...
+Extracting Time:	 0.918
+Extracting Query Feature...
+Extracting Time:	 8.790
+Start knn-search:
+Finish knn-search:0.22052407264709473
+eval feat after batchnorm
+Evaluation Time:	 0.907
+all:   Rank-1: 77.47% | Rank-5: 92.77% | Rank-10: 96.24%| Rank-20: 98.53%| mAP: 71.60%| mINP: 57.01%
+indoor:   Rank-1: 79.80% | Rank-5: 95.97% | Rank-10: 98.32%| Rank-20: 99.05%| mAP: 83.79%| mINP: 81.56%
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 1.351
+Extracting Query Feature...
+Extracting Time:	 8.717
+Start knn-search:
+Finish knn-search:0.2511715888977051
+eval feat after batchnorm
+Evaluation Time:	 2.483
+Extracting Gallery Feature...
+Extracting Time:	 0.927
+Extracting Query Feature...
+Extracting Time:	 8.709
+Start knn-search:
+Finish knn-search:0.21408891677856445
+eval feat after batchnorm
+Evaluation Time:	 0.897
+all:   Rank-1: 78.33% | Rank-5: 92.85% | Rank-10: 95.50%| Rank-20: 98.63%| mAP: 72.91%| mINP: 58.22%
+indoor:   Rank-1: 78.62% | Rank-5: 93.03% | Rank-10: 97.10%| Rank-20: 99.55%| mAP: 81.66%| mINP: 78.59%
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 1.410
+Extracting Query Feature...
+Extracting Time:	 8.851
+Start knn-search:
+Finish knn-search:0.22976136207580566
+eval feat after batchnorm
+Evaluation Time:	 2.465
+Extracting Gallery Feature...
+Extracting Time:	 0.939
+Extracting Query Feature...
+Extracting Time:	 8.848
+Start knn-search:
+Finish knn-search:0.21650362014770508
+eval feat after batchnorm
+Evaluation Time:	 0.899
+all:   Rank-1: 77.60% | Rank-5: 95.85% | Rank-10: 97.92%| Rank-20: 98.76%| mAP: 73.25%| mINP: 59.07%
+indoor:   Rank-1: 80.48% | Rank-5: 95.74% | Rank-10: 97.24%| Rank-20: 99.50%| mAP: 83.43%| mINP: 80.17%
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 1.429
+Extracting Query Feature...
+Extracting Time:	 8.771
+Start knn-search:
+Finish knn-search:0.23971009254455566
+eval feat after batchnorm
+Evaluation Time:	 2.488
+Extracting Gallery Feature...
+Extracting Time:	 0.950
+Extracting Query Feature...
+Extracting Time:	 8.671
+Start knn-search:
+Finish knn-search:0.2168896198272705
+eval feat after batchnorm
+Evaluation Time:	 0.906
+all:   Rank-1: 75.05% | Rank-5: 92.74% | Rank-10: 96.16%| Rank-20: 97.87%| mAP: 70.81%| mINP: 56.56%
+indoor:   Rank-1: 80.43% | Rank-5: 95.70% | Rank-10: 97.55%| Rank-20: 99.50%| mAP: 83.52%| mINP: 80.39%
+============load data==========
+=> SYSU-MM01  loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+   train-RGB   |   395 |    22258 |         4
+   train-IR    |   395 |    11909 |         2
+   test-RGB    |    96 |     6775 |         4
+    test-IR    |    96 |     3803 |         2
+   query-RGB   |   395 |    22258 |         4
+  gallery-RGB  |   395 |    22258 |         4
+    query-IR   |   395 |    11909 |         2
+   gallery-IR  |   395 |    11909 |         2
+  ----------------------------------------
+  ----------------------------
+  ALL SEARCH 
+  query    |    96 |     3803
+  gallery  |    96 |      301
+  INDOOR SEARCH 
+  query    |    96 |     3803
+  gallery  |    56 |      112
+  ----------------------------
+==> Building model..
+=> Loaded checkpoint '/data/hlf/USL/logs/lambda_2=0.5/stage_two_model/checkpoint.pth.tar'
+Extracting Gallery Feature...
+Extracting Time:	 1.335
+Extracting Query Feature...
+Extracting Time:	 8.768
+Start knn-search:
+Finish knn-search:0.24159717559814453
+eval feat after batchnorm
+Evaluation Time:	 2.476
+Extracting Gallery Feature...
+Extracting Time:	 0.936
+Extracting Query Feature...
+Extracting Time:	 8.956
+Start knn-search:
+Finish knn-search:0.20820212364196777
+eval feat after batchnorm
+Evaluation Time:	 0.893
+all:   Rank-1: 75.68% | Rank-5: 93.35% | Rank-10: 97.05%| Rank-20: 99.40%| mAP: 73.73%| mINP: 62.27%
+indoor:   Rank-1: 78.67% | Rank-5: 95.65% | Rank-10: 98.01%| Rank-20: 99.95%| mAP: 82.98%| mINP: 80.25%
+all:   Rank-1: 78.29% | Rank-5: 94.03% | Rank-10: 97.08%| Rank-20: 98.95%| mAP: 74.08%| mINP: 60.68%
+indoor:   Rank-1: 79.64% | Rank-5: 94.67% | Rank-10: 97.27%| Rank-20: 99.53%| mAP: 82.75%| mINP: 79.65%
