@@ -29,7 +29,13 @@ We adopt the two-stream network structure introduced in [3]. ResNet50 is adopted
 + torchvision==0.15.2
 + tqdm==4.66.1
 
-### 3. Training.
+### 3. Download.
+
+A baseline model trained under the DCL framework[4] can be downloaded from this [website](https://drive.google.com/drive/folders/15PlJnbiWRg9WWZ-5d3_EPS0abD2HWny9) in baseline_model.pth.tar.
+
+A final model trained under our SALCR framework can be downloaded from this [website](https://drive.google.com/drive/folders/15PlJnbiWRg9WWZ-5d3_EPS0abD2HWny9) in SALCR_model.pth.tar
+
+### 4. Training.
   Train a model on SYSU-MM01:
   ```bash
 python3 main.py --dataset sysu --batch-size 12 --num_pos 12 --eps 0.6 --pretrained False
@@ -52,7 +58,7 @@ You may need mannully define the data path first.
 
 **Parameters**: More parameters can be found in the script.
 
-### 4. Testing.
+### 5. Testing.
 
 Test a model on SYSU-MM01: 
   ```bash
