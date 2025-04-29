@@ -3,7 +3,7 @@ Pytorch Code of our paper ``Semantic-Aligned Learning with Collaborative Refinem
 Our paper is accepted by **International Journal of Computer Vision (IJCV) 2025**, available at:  
 [**Semantic-Aligned Learning with Collaborative Refinement for Unsupervised VI-ReID (SALCR)**](https://arxiv.org/pdf/2504.19244)
 
-![Framework](framework.pdf)
+![Framework Overview](framework.pdf)
 
 We adopt the two-stream network structure introduced in [3]. ResNet50 is adopted as the backbone.
 
