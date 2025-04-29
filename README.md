@@ -5,7 +5,7 @@ Our paper is accepted by **International Journal of Computer Vision (IJCV) 2025*
 [**Semantic-Aligned Learning with Collaborative Refinement for Unsupervised VI-ReID (SALCR)**](https://arxiv.org/pdf/2504.19244)
 
 <p align="center">
-  <img src="code-for-SALCR/framework_00.png" width="100%">
+  <img src="framework_00.png" width="100%">
 </p>
 
 We adopt the two-stream network structure introduced in [3]. ResNet50 is adopted as the backbone.
